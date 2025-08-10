@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Arsy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <img src="img/amengide1.jpg" alt="amengide">
+                    <div class="logo-text">Muhammad Nurul Arsy</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="pic">
+                    <img src="img/IMG_9728 (1).png" alt="profile picture">
+                </div>
+                <div class="text">
+                    <h3>Hello, i'm <span class="frontend">Frontend Developer</span></h3>
+                    <h1 class="nama">Muhammad Nurul Arsy</h1>
+                    <p>Mahasiswa semester 4 Teknik Informatika di Universitas Mercu Buana Meruya dengan fokus sebagai Web Interface Developer, menguasai HTML, CSS, dan JavaScript. Aktif di Himpunan Mahasiswa Teknik Informatika (HiMTI) sebagai anggota Divisi Ristek dan pengajar web. Terampil menggunakan Visual Studio Code, GitHub, Figma, Canva, Microsoft Word, dan Excel. Tertarik pada data analytics. Selain itu, gemar mengembangkan aplikasi mobile / React.
+                    </p>
+
+                    <div class="button-group">
+                        <a href="assets/CV Muhammad Nurul Arsy (2).pdf" class="btn active">View CV</a>
+                        <a href="https://wa.me/6285780759566?text=Halo,%20saya%20tertarik%20dengan%20CV%20dan%20portofolio%20Anda.%20Apakah%20kita%20dapat%20berdiskusi%20lebih%20lanjut%20terkait%20peluang%20kerja%20sama%20atau%20rekrutmen?" 
+                        class="btn" target="_blank">
+                        Contact Me
+                        </a>
+                    </div>
+
+                    <div class="social">
+                    <a href="https://github.com/arsyjr7" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/arsymuhammadd/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100008267646998&locale=id_ID" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/arsyjr7" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    
+                    <div class="copyright">
+                    <p>&copy; 2025 Muhammad Nurul Arsy. All rights reserved.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function() {
+            nav.classList.toggle("open");
+            this.classList.toggle("click");
+        }); 
+
+        var typed=new Typed(".frontend", {
+            strings: ["Frontend Developer", "Web Interface Developer", "Web Designer"],
+            typeSpeed: 100,
+            backSpeed: 55,
+            loop: true
+        });
+    </script>
+</body>
+</html>
