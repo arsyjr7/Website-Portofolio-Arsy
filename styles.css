@@ -174,7 +174,7 @@ nav .navlinks li a{
 }
 
 .button-group .btn {
-    padding: 17px 20px;
+    padding: 12px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -331,18 +331,21 @@ nav .navlinks li a{
         gap: clamp(10px, 3vw, 20px);
         flex-wrap: wrap;
         margin-top: clamp(15px, 3vh, 25px);
+        align-items: center;
     }
     
     .button-group .btn {
         padding: clamp(12px, 3vw, 15px) clamp(15px, 4vw, 20px);
         font-size: clamp(0.9rem, 2.2vw, 1rem);
         min-width: 120px;
+        text-align: center;
     }
     
     .button-group .btn.active {
         background-color: #4169E1;
         background-image: linear-gradient(to right, #001d3e, #4485bd);
         color: #fff;
+        text-align: center;
     }
     
     .button-group .btn.active:hover {
